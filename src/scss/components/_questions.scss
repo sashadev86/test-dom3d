@@ -1,0 +1,17 @@
+.questions {
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+
+  &__container {
+    max-width: rem(970);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: rem(50);
+  }
+}

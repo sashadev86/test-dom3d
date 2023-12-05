@@ -1,0 +1,32 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+
+    font-size: rem(16);
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    color: var(--colors-storm-grey);
+    opacity: 1;
+
+    transition: opacity var(--animation-timing) var(--animation-transition);
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &-image {
+      width: rem(17);
+      height: rem(20);
+
+      fill: var(--colors-storm-grey);
+    }
+  }
+}

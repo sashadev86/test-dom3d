@@ -1,0 +1,34 @@
+.download {
+  padding: rem(13) rem(19);
+
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+
+  font-family: var(--font-family-secondary);
+  font-size: rem(16);
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  color: var(--colors-white);
+
+  background: var(--colors-link-download);
+  border-radius: var(--radius-5);
+  box-shadow: var(--link-download);
+
+  transition: background var(--animation-timing) var(--animation-transition);
+
+  &:hover {
+    background: var(--colors-link-download-hover);
+  }
+
+  &__hidden {
+    display: none;
+
+    &-image {
+      width: rem(14);
+      height: rem(14);
+
+      fill: var(--colors-white);
+    }
+  }
+}
