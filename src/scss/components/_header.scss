@@ -1,0 +1,23 @@
+.header {
+  padding-top: rem(14);
+  padding-bottom: rem(15);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(40);
+
+    &-controls {
+      display: flex;
+      align-items: center;
+      gap: rem(12);
+    }
+  }
+}

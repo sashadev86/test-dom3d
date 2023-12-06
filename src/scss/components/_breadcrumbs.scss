@@ -1,0 +1,41 @@
+.breadcrumbs {
+  margin-bottom: rem(45);
+
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: rem(25);
+    }
+
+    &-item {
+      position: relative;
+
+      &:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        top: rem(7);
+        right: rem(-14);
+
+        width: rem(7);
+        height: rem(7);
+        border-top: 1px solid var(--colors-baltic-sea);
+        border-right: 1px solid var(--colors-baltic-sea);
+        transform: rotate(45deg);
+
+        opacity: .6;
+      }
+
+      &:not(:last-child) {
+        opacity: .6;
+      }
+    }
+
+    &-link {
+      font-size: rem(14);
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--colors-baltic-sea);
+    }
+  }
+}
